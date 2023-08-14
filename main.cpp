@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
     //创建数据库连接池
     connection_pool *connPool = connection_pool::GetInstance();
     // 上传github时删除账号密码
-    connPool->init("localhost", "root", "Yzj050704.", "yourdb", 3306, 8);
+    connPool->init("localhost", "root", "pwd", "yourdb", 3306, 8);
 
     //创建线程池
     threadpool<http_conn> *pool = NULL;
